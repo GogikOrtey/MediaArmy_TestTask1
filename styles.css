@@ -46,6 +46,8 @@ html {
 .main-window {
     position: absolute;
     height: 90%;
+    /* height: auto; */
+    min-height: 90%;
     width: 60%;
     background-color: white;
     margin: auto;
@@ -93,33 +95,34 @@ html {
         background-color: #c4c4c4;
         border-radius: 1vh;
         height: 3vh;
-        width: 12vw;
+        /* width: 12vw; */
+        width: 200px;
         margin: auto;
         margin-bottom: 1vh;
     }
 
     .elem-2 {
-        width: 4.5vw;
+        /* width: 4.5vw; */
+        width: 80px;
         margin-top: 1vh;
     }
 }
 
-@media (max-width: 665px) {
-    .main-block {
-
-    }
+.cont-for-main-block {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .main-block {
     background-color:  rgb(248, 248, 248);
-    /* border-radius: 0px 0px 4px 4px ;  */
     display: grid;
     /* grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
-    /*gap: 16px; /* это свойство добавляет отступы между карточками */
     width: 55%;
     margin: auto;
+    padding: 40px;
 
     .card {
         /* border: solid 1px black; */
