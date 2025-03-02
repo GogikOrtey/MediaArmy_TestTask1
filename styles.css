@@ -29,11 +29,13 @@ html {
     cursor: pointer;
 }
 
-.button-element:hover {
+
+
+.button-active-color:hover {
     filter: brightness(95%);
 }
 
-.button-element:active {
+.button-active-color:active {
     filter: brightness(85%);
 }
 
@@ -55,9 +57,31 @@ html {
 }
 
 .window-header {
-    /* border: solid 1px black; */
     background-color:  rgb(239, 239, 239);
     cursor: move;
+    border-radius: 4px 4px 0px 0px; 
+
+    padding-left: 14px;
+    padding-top: 3px;
+
+    .button-window-head {
+        border-radius: 100%;
+        width: 9px;
+        height: 9px;
+        display: inline-block;
+        margin: 0px 1px;
+    }
+
+    .butt-1 {
+        background-color: rgb(223, 0, 0);
+        cursor:pointer;
+    }
+    .butt-2 {
+        background-color: rgb(241, 177, 0);
+    }
+    .butt-3 {
+        background-color: rgb(55, 194, 0);
+    }
 }
 
 .title-block {
@@ -69,4 +93,5 @@ html {
 .main-block {
     /* border: solid 1px black; */
     background-color:  rgb(248, 248, 248);
+    border-radius: 0px 0px 4px 4px ; 
 }
