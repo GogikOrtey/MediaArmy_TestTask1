@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="Ru">
+<!-- Окно на странице можно передвигать мышкой, за заголовок -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,11 @@
 </head>
 <body>
     <div class="main-container">
-        <button class = "button-element button-active-color">Button</button>
+        <button class = "button-element button-active-color" id="open-window">Button</button>
 
         <div class="main-window" id="draggable">
             <div class="window-header" id="drag-area">
-                <div class="butt-1 button-window-head button-active-color"></div>
+                <div class="butt-1 button-window-head button-active-color" id="closed-window"></div>
                 <div class="butt-2 button-window-head"></div>
                 <div class="butt-3 button-window-head"></div>
             </div>
