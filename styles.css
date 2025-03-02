@@ -90,16 +90,16 @@ html {
 
     .elem-1, .elem-2 {
         background-color: #c4c4c4;
-        border-radius: 5px;
-        height: 15px;
-        width: 110px;
+        border-radius: 1vh;
+        height: 3vh;
+        width: 12vw;
         margin: auto;
-        margin-bottom: 5px;
+        margin-bottom: 1vh;
     }
 
     .elem-2 {
-        width: 40px;
-        margin-top: 5px;
+        width: 4.5vw;
+        margin-top: 1vh;
     }
 }
 
