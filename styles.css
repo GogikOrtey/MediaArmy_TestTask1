@@ -42,12 +42,12 @@ html {
 }
 
 .main-window {
+    position: absolute;
     height: 200px;
     width: 300px;
     background-color: white;
     margin: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    position: absolute;
+    border-radius: 4px;    
     cursor: move;
 }

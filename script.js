@@ -29,5 +29,19 @@ const dragElement = (element) => {
     element.onmousedown = dragMouseDown;
 };
 
+// Центрирует элемент при открытии страницы
+const centerElement = (element) => {
+    const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
+    const elementHeight = element.offsetHeight;
+    const elementWidth = element.offsetWidth;
+
+    element.style.top = (windowHeight / 2 - elementHeight / 2) + "px";
+    element.style.left = (windowWidth / 2 - elementWidth / 2) + "px";
+};
+
 const draggableElement = document.getElementById("draggable");
 dragElement(draggableElement);
+centerElement(draggableElement);
+
+window.onresize = () => centerElement(draggableElement);
