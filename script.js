@@ -1,6 +1,6 @@
 
 // Делает элемент перемещаемым по странице, при помощи мыши
-const dragElement = (element) => {
+const dragElement = (element, dragArea) => {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
     const dragMouseDown = (e) => {
@@ -26,10 +26,9 @@ const dragElement = (element) => {
         document.onmousemove = null;
     };
 
-    element.onmousedown = dragMouseDown;
+    dragArea.onmousedown = dragMouseDown;
 };
 
-// Центрирует элемент при открытии страницы
 const centerElement = (element) => {
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
@@ -41,7 +40,8 @@ const centerElement = (element) => {
 };
 
 const draggableElement = document.getElementById("draggable");
-dragElement(draggableElement);
+const dragArea = document.getElementById("drag-area");
+dragElement(draggableElement, dragArea);
 centerElement(draggableElement);
 
 window.onresize = () => centerElement(draggableElement);

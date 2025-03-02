@@ -43,11 +43,30 @@ html {
 
 .main-window {
     position: absolute;
-    height: 200px;
-    width: 300px;
+    height: 90%;
+    width: 60%;
     background-color: white;
     margin: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;    
+    border-radius: 4px;        
+
+    display: grid;
+    grid-template-rows: 25px 25% 1fr;
+}
+
+.window-header {
+    /* border: solid 1px black; */
+    background-color:  rgb(239, 239, 239);
     cursor: move;
+}
+
+.title-block {
+    /* border: solid 1px black; */
+    /* background-color:  white; */
+    background: linear-gradient(to bottom, #e6e6e6, #d8d8d8);
+}
+
+.main-block {
+    /* border: solid 1px black; */
+    background-color:  rgb(248, 248, 248);
 }
