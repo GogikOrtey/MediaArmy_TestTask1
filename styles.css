@@ -24,5 +24,16 @@ html {
     width: 150px;
     border: 0px;
     border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+    cursor: pointer;
 }
+
+.button-element:hover {
+    filter: brightness(95%);
+}
+
+.button-element:active {
+    filter: brightness(85%);
+}
+
