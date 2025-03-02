@@ -85,9 +85,22 @@ html {
 }
 
 .title-block {
-    /* border: solid 1px black; */
-    /* background-color:  white; */
     background: linear-gradient(to bottom, #e6e6e6, #d8d8d8);
+    display: grid;
+
+    .elem-1, .elem-2 {
+        background-color: #c4c4c4;
+        border-radius: 5px;
+        height: 15px;
+        width: 110px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .elem-2 {
+        width: 40px;
+        margin-top: 5px;
+    }
 }
 
 .main-block {
